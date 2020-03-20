@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五彩练习</title>
+    <style>
+        .nav a {
+             /* 元素转换为行内块 */
+            display: inline-block;
+            background-color: pink;
+            width: 96px;
+            height: 116px;
+            /* 行高=块高 对齐 */
+            line-height: 116px;
+            /* 文本居中 */
+            text-align: center;
+            /* 取消下划线 */
+            text-decoration: none;
+        }
+
+              /* 给第一个链接加入图片 */
+        .nav .d1 {
+            background: url(images/d1.png) no-repeat;
+        }
+             /* 鼠标经过时换图片 */
+        .nav .d1:hover {
+            background: url(images/d5.png);
+        }
+
+        .nav .d2 {
+            background: url(images/d2.png ) no-repeat;
+
+        }
+
+        .nav .d2:hover {
+            background: url(images/d4.png);
+        }
+        .nav .d3 {
+            background: url(images/d1.png) no-repeat;
+        }
+        .nav .d3:hover { 
+            background: url(images/d5.png);
+
+        }
+        .nav .d4 {
+            background: url(images/d4.png) no-repeat;
+        }
+        .nav .d4:hover {
+             background: url(images/d1.png);
+        }
+         .nav .d5 {
+             background: url(images/d5.png) no-repeat;
+         }
+         .nav .d5:hover {
+             background: url(images/d3.png);
+         }
+    </style>
+
+</head>
+
+ <body>        <!-- class定义 .调用 -->
+    <div class="nav">
+
+        <a href="#" class="d1">陈总</a>
+        <a href="#" class="d2">沙雕</a>
+        <a href="#" class="d3">喜欢</a>
+        <a href="#" class="d4">会所</a>
+        <a href="#" class="d5">烫头</a>
+    </div>
+
+</body>
+
+</html>

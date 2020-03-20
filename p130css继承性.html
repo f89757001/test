@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width  , initial-scale=1.0">
+    <title>css继承性</title>
+    <style>
+        body {
+            color: pink;
+            /* 字体大小/行高 */
+            font: 20px/1.5"Microsoft Yahei";
+        }
+
+        div {
+            /*子元素继承了父元素body行高的1.5倍 */
+            /* 下面的1.5就是当前元素文字大小 font-size的1.5倍 */
+            font-size: 14px;
+        }
+
+        p {
+            /* 继承body的1.5   */
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        子承父业
+    </div>
+
+    <p>龙凤呈祥</p>
+    <ul>
+        <li>没有指定文字大小 继承body 20px*1.5=30px</li>
+    </ul>
+</body>
+
+</html>
