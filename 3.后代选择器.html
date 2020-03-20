@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之后代选择器</title>
+    <!-- 我想把ol里面的小li选出来改为pink -->
+    <style>
+        ol li {
+            color: pink;
+
+        }
+
+        /* 给 li里面的 a 标签改成红色 */
+        ol li a {
+            color: red;
+        }
+              /* 给 特定ul》li》a 标签改颜色 */
+        .nav li a {
+            color: blue;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <ol>
+        变态写法
+        <li>ol的小弟</li>
+        <li>ol的小弟</li>
+        <li>ol的小弟</li>
+        <li><a href="#">小弟的小弟</a></li>
+    </ol>
+    <ul>
+        <li>ul的小弟</li>
+        <li>ul的小弟</li>
+        <li>ul的小弟</li>
+    </ul>
+        <ul class="nav">
+            <li><a href="#">不变</a></li>
+            <li><a href="#">不变</a></li>
+            <li><a href="#">不变</a></li>
+        </ul>
+</body>
+
+</html>
